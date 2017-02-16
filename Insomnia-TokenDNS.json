@@ -1,0 +1,914 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2017-02-16T18:10:21.997Z",
+	"__export_source": "insomnia.desktop.app:v4.2.5",
+	"resources": [
+		{
+			"_id": "wrk_f44d46489e814881affaa16cf7811891",
+			"parentId": null,
+			"modified": 1481569749313,
+			"created": 1481569749313,
+			"name": "Insomnia",
+			"description": "",
+			"certificates": [],
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_446e6009ccf640ad8e1d4059f4f68121",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481569784616,
+			"created": 1481569762871,
+			"name": "TokenDNS",
+			"data": {},
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_82f7166e28ca4471a1d3f0a7c2d76047",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1485291510354,
+			"created": 1481569838825,
+			"name": "Default Jar",
+			"cookies": [],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_09bf6017358c40a9a378ff74c952391a",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1483037025047,
+			"created": 1481570027843,
+			"url": "https://api.tokendns.co/v1/delete",
+			"name": "Delete Record",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "name",
+					"value": "@"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "content",
+					"value": "ALT2.ASPMX.L.GOOGLE.com."
+				},
+				{
+					"name": "ttl",
+					"value": "300"
+				},
+				{
+					"name": "type",
+					"value": "MX"
+				},
+				{
+					"name": "priority",
+					"value": "0"
+				},
+				{
+					"name": "tag",
+					"value": "gmail"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832901,
+			"_type": "request"
+		},
+		{
+			"_id": "req_21cf80ae6a554bcbad22db336f503b3b",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481572123120,
+			"created": 1481570302251,
+			"url": "https://api.tokendns.co/v1/failoverdns",
+			"name": "Create FailoverDNS",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "action",
+					"value": "add"
+				},
+				{
+					"name": "status",
+					"value": "enable"
+				},
+				{
+					"name": "url",
+					"value": "http://www.example.com/status.html"
+				},
+				{
+					"name": "record_type",
+					"value": "A"
+				},
+				{
+					"name": "record_name",
+					"value": "example"
+				},
+				{
+					"name": "record_content",
+					"value": "10.0.0.1"
+				},
+				{
+					"name": "record_original",
+					"value": "127.0.0.1"
+				},
+				{
+					"name": "response_type",
+					"value": "content"
+				},
+				{
+					"name": "response_content",
+					"value": "OK"
+				},
+				{
+					"name": "retry",
+					"value": "5"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832898,
+			"_type": "request"
+		},
+		{
+			"_id": "req_22b5defc649e4c94b2d398885af2f2a2",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481571662314,
+			"created": 1481571439575,
+			"url": "https://api.tokendns.co/v1/notifications",
+			"name": "Delete Notifications",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "provider",
+					"value": "email"
+				},
+				{
+					"name": "action",
+					"value": "delete"
+				},
+				{
+					"name": "id",
+					"value": "46"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832889.25,
+			"_type": "request"
+		},
+		{
+			"_id": "req_2d03d1659530471f826e38154cd213d6",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481572075251,
+			"created": 1481572029219,
+			"url": "https://api.tokendns.co/v1/notifications",
+			"name": "PagerDuty Notifications",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "provider",
+					"value": "pagerduty"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "token",
+					"value": "blabla"
+				},
+				{
+					"name": "action",
+					"value": "add"
+				},
+				{
+					"name": "description",
+					"value": "Test Insomnia"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832886,
+			"_type": "request"
+		},
+		{
+			"_id": "req_3a660ce563514adf8ca94d70fbddc614",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481571991971,
+			"created": 1481571665140,
+			"url": "https://api.tokendns.co/v1/notifications",
+			"name": "PushOver Notifications",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "provider",
+					"value": "pushover"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "user",
+					"value": "blabla"
+				},
+				{
+					"name": "token",
+					"value": "blabla"
+				},
+				{
+					"name": "action",
+					"value": "add"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832888,
+			"_type": "request"
+		},
+		{
+			"_id": "req_3b59210103b34788984b6716407d4bde",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481570619314,
+			"created": 1481570540611,
+			"url": "https://api.tokendns.co/v1/failoverdns",
+			"name": "Status FailoverDNS",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "action",
+					"value": "status"
+				},
+				{
+					"name": "status",
+					"value": "disable"
+				},
+				{
+					"name": "id",
+					"value": "1"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832896,
+			"_type": "request"
+		},
+		{
+			"_id": "req_4a72845619c54124b907bf9dd8e08940",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481571764504,
+			"created": 1481571293709,
+			"url": "https://api.tokendns.co/v1/notifications",
+			"name": "Email Notifications",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "provider",
+					"value": "email"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "recipient",
+					"value": ""
+				},
+				{
+					"name": "description",
+					"value": "Test Insomnia"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832889,
+			"_type": "request"
+		},
+		{
+			"_id": "req_6a535bb3cc494d99bcb02c35772c6504",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481572228245,
+			"created": 1481572214866,
+			"url": "https://ip.tokendns.co/",
+			"name": "What is my ip",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "json",
+					"value": "true"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481572214866,
+			"_type": "request"
+		},
+		{
+			"_id": "req_6af8bbe5682c4eb9b9c4ef3e5ad6d3b2",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481570522312,
+			"created": 1481570442388,
+			"url": "https://api.tokendns.co/v1/failoverdns",
+			"name": "List FailoverDNS",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "action",
+					"value": "list"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832897,
+			"_type": "request"
+		},
+		{
+			"_id": "req_7fde8263eddd4932823e8f9cb3f946a8",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481571015771,
+			"created": 1481571005554,
+			"url": "https://api.tokendns.co/v1/domains",
+			"name": "Register Domain (HTTP)",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "action",
+					"value": "add"
+				},
+				{
+					"name": "method",
+					"value": "http"
+				},
+				{
+					"name": "billing",
+					"value": "yearly"
+				},
+				{
+					"name": "voucher",
+					"value": ""
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832892,
+			"_type": "request"
+		},
+		{
+			"_id": "req_81f54cf3a87848d182f3c7d205c78cf3",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1482864882604,
+			"created": 1481571390659,
+			"url": "https://api.tokendns.co/v1/notifications",
+			"name": "List Notifications",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "provider",
+					"value": "email"
+				},
+				{
+					"name": "action",
+					"value": "list"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832889.5,
+			"_type": "request"
+		},
+		{
+			"_id": "req_82aac5e48c9b40ec87e0d14ee06ed805",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481571063726,
+			"created": 1481571052333,
+			"url": "https://api.tokendns.co/v1/domains",
+			"name": "List Domain",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "action",
+					"value": "list"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832890,
+			"_type": "request"
+		},
+		{
+			"_id": "req_9b0147c37fe9469a87068503a5ad1b80",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481571987866,
+			"created": 1481571924244,
+			"url": "https://api.tokendns.co/v1/notifications",
+			"name": "Webhook Notifications",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "provider",
+					"value": "webhook"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "webhook",
+					"value": "http://www.example.com/webhook"
+				},
+				{
+					"name": "action",
+					"value": "add"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832887,
+			"_type": "request"
+		},
+		{
+			"_id": "req_a9e6b60c5a7e47cdb4223e538ab627bc",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481657410450,
+			"created": 1481569997182,
+			"url": "https://api.tokendns.co/v1/update",
+			"name": "Update Record",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "name",
+					"value": "www"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "content",
+					"value": "2a03:b0c0:2:d0::7b:a001"
+				},
+				{
+					"name": "ttl",
+					"value": "0"
+				},
+				{
+					"name": "type",
+					"value": "AAAA"
+				},
+				{
+					"name": "priority",
+					"value": "0"
+				},
+				{
+					"name": "tag",
+					"value": "website"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832902,
+			"_type": "request"
+		},
+		{
+			"_id": "req_bc1692a6dc504c44bb48153cd11c12d4",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1485291508602,
+			"created": 1481569832903,
+			"url": "https://api.tokendns.co/v1/reserve",
+			"name": "Create Record",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "name",
+					"value": "test"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "content",
+					"value": "127.0.0.1"
+				},
+				{
+					"name": "ttl",
+					"value": "300"
+				},
+				{
+					"name": "type",
+					"value": "A"
+				},
+				{
+					"name": "priority",
+					"value": "10"
+				},
+				{
+					"name": "tag",
+					"value": "gmail"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832903,
+			"_type": "request"
+		},
+		{
+			"_id": "req_c03b618eb2494466866faf83045de660",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481570797988,
+			"created": 1481570758855,
+			"url": "https://api.tokendns.co/v1/failoverdns",
+			"name": "Delete FailoverDNS",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "action",
+					"value": "delete"
+				},
+				{
+					"name": "id",
+					"value": "1"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832895,
+			"_type": "request"
+		},
+		{
+			"_id": "req_c4417923c615472596d69b65f06d8009",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481570979619,
+			"created": 1481570824419,
+			"url": "https://api.tokendns.co/v1/domains",
+			"name": "Register Domain (Email)",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "action",
+					"value": "add"
+				},
+				{
+					"name": "method",
+					"value": "email"
+				},
+				{
+					"name": "billing",
+					"value": "yearly"
+				},
+				{
+					"name": "email",
+					"value": "webmaster@example.com"
+				},
+				{
+					"name": "voucher",
+					"value": ""
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832894,
+			"_type": "request"
+		},
+		{
+			"_id": "req_df52310c1bdf412fb3792f4b15301380",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481570237961,
+			"created": 1481570233068,
+			"url": "https://api.tokendns.co/v1/status",
+			"name": "Status",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "name",
+					"value": "example"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832899,
+			"_type": "request"
+		},
+		{
+			"_id": "req_e3352121b4604c8584e08218e2345152",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481739377425,
+			"created": 1481573595166,
+			"url": "https://api.tokendns.co/v1/settings",
+			"name": "Update Address",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "action",
+					"value": "address"
+				},
+				{
+					"name": "name",
+					"value": ""
+				},
+				{
+					"name": "address1",
+					"value": ""
+				},
+				{
+					"name": "address2",
+					"value": "",
+					"disabled": false
+				},
+				{
+					"name": "city",
+					"value": ""
+				},
+				{
+					"name": "zip",
+					"value": ""
+				},
+				{
+					"name": "country",
+					"value": ""
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832885,
+			"_type": "request"
+		},
+		{
+			"_id": "req_e8cb16c527c7410999c64dfdc666bd76",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481570995354,
+			"created": 1481570982076,
+			"url": "https://api.tokendns.co/v1/domains",
+			"name": "Register Domain (DNS)",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "action",
+					"value": "add"
+				},
+				{
+					"name": "method",
+					"value": "dns"
+				},
+				{
+					"name": "billing",
+					"value": "yearly"
+				},
+				{
+					"name": "voucher",
+					"value": ""
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832893,
+			"_type": "request"
+		},
+		{
+			"_id": "req_edb46da54aae438cbf83ded7d1351764",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1485291850563,
+			"created": 1481571020955,
+			"url": "https://api.tokendns.co/v1/domains",
+			"name": "Delete Domain",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				},
+				{
+					"name": "action",
+					"value": "delete"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832891,
+			"_type": "request"
+		},
+		{
+			"_id": "req_f8f7fe9391da475589c94c8d7e73e9ba",
+			"parentId": "wrk_f44d46489e814881affaa16cf7811891",
+			"modified": 1481570150335,
+			"created": 1481570052020,
+			"url": "https://api.tokendns.co/v1/tags",
+			"name": "List Tags",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [
+				{
+					"name": "apikey",
+					"value": ""
+				},
+				{
+					"name": "name",
+					"value": "example"
+				},
+				{
+					"name": "domain",
+					"value": "example.com"
+				}
+			],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1481569832900,
+			"_type": "request"
+		},
+		{
+			"_id": "env_07c13770710342128bd5ab21e8e52129",
+			"parentId": "env_446e6009ccf640ad8e1d4059f4f68121",
+			"modified": 1481569818042,
+			"created": 1481569786404,
+			"name": "TokenDNS API",
+			"data": {},
+			"_type": "environment"
+		}
+	]
+}
